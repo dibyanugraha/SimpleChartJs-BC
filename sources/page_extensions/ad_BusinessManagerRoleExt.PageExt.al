@@ -2,7 +2,7 @@ pageextension 50000 "ad_BusinessManagerRoleExt" extends "Business Manager Role C
 {
     layout
     {
-        addafter(Control98)
+        addafter(Control96)
         {
             part("Chart"; ad_ShowChartPart)
             {

@@ -1,4 +1,4 @@
-page 50100 "ad_ShowChartPart"
+page 50000 "ad_ShowChartPart"
 {
     PageType = CardPart;
     Caption = 'Chart';
@@ -7,7 +7,7 @@ page 50100 "ad_ShowChartPart"
     {
         area(Content)
         {
-            usercontrol("Calendar"; ad_ChartJs)
+            usercontrol("Chart"; ad_ChartJs)
             {
                 ApplicationArea = All;
                 trigger OnControlAddInReady()

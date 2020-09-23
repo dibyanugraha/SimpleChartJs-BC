@@ -1,10 +1,11 @@
 controladdin "ad_ChartJs"
 {
-    StartupScript = 'sources/scripts/start.js';
     Scripts =
         'sources/scripts/Chart.bundle.min.js';
     StyleSheets =
-        'sources/scripts/Chart.min.css';
+        'sources/stylesheets/Chart.min.css';
+
+    StartupScript = 'sources/scripts/start.js';
 
     RequestedHeight = 320;
     RequestedWidth = 300;
