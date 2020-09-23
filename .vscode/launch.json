@@ -13,7 +13,8 @@
             "longRunningSqlStatementsThreshold": 500,
             "numberOfSqlStatements": 10,
             "schemaUpdateMode": "ForceSync",
-            "disableHttpRequestTimeout": true
+            "disableHttpRequestTimeout": true,
+            "sandboxName": "SandboxW1"
         }
     ]
 }
