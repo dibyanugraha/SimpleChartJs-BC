@@ -39,6 +39,8 @@ var myChart = new Chart(chartCanvas, {
   }
 });
 
+function SendDataToJS(code, name, total) { alert(code + " " + name + " "+ total); }
+
 addInElement.appendChild(chartCanvas);
 
 myChart.render();

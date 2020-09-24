@@ -17,4 +17,5 @@ controladdin "ad_ChartJs"
     HorizontalStretch = true;
 
     event OnControlAddInReady();
+    procedure SendDataToJS(custCodes: Code[20]; custName: text; custOutAR: Decimal);
 }
