@@ -10,8 +10,9 @@ page 50000 "ad_ShowChartPart"
             usercontrol("Chart"; ad_ChartJs)
             {
                 ApplicationArea = All;
-                trigger OnControlAddInReady()
+                trigger OnControlAddInReady(messageStr: Text)
                 begin
+                    Message(messageStr);
                 end;
             }
         }
@@ -33,10 +34,7 @@ page 50000 "ad_ShowChartPart"
 
                 begin
                     cust.FindFirst();
-
                     CurrPage.Chart.SendDataToJS(cust."No.", cust.Name, cust.GetTotalAmountLCY());
-
-                    CurrPage.Update(false);
                 end;
             }
         }
