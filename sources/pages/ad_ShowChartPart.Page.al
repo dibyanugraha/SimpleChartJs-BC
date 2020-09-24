@@ -35,6 +35,8 @@ page 50000 "ad_ShowChartPart"
                     cust.FindFirst();
 
                     CurrPage.Chart.SendDataToJS(cust."No.", cust.Name, cust.GetTotalAmountLCY());
+
+                    CurrPage.Update(false);
                 end;
             }
         }
