@@ -12,7 +12,7 @@ page 50000 "ad_ShowChartPart"
                 ApplicationArea = All;
                 trigger OnControlAddInReady(messageStr: Text)
                 begin
-                    Message(messageStr);
+                    Message('The message was %1', messageStr);
                 end;
             }
         }

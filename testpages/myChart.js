@@ -8,13 +8,6 @@ var config = {
             borderColor: window.chartColors.red,
             backgroundColor: window.chartColors.red,
             data: [
-                // randomScalingFactor(),
-                // randomScalingFactor(),
-                // randomScalingFactor(),
-                // randomScalingFactor(),
-                // randomScalingFactor(),
-                // randomScalingFactor(),
-                // randomScalingFactor()
                 30000, 40000, 50000, 15000, 18000, 19000, 22000
             ]
         } 
@@ -54,7 +47,7 @@ var config = {
     }
 };
 
-var progress = document.getElementById('animationProgress');
+// var progress = document.getElementById('animationProgress');
 
 window.addEventListener('DOMContentLoaded', (event) => {
 //window.onload = function() {
