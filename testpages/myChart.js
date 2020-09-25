@@ -68,14 +68,11 @@ document.getElementById('renderBtn').addEventListener('click', function() {
     //         return randomScalingFactor();
     //     });
     // });
-    config.data.datasets.forEach(function(dataset) {
-        dataset.data.pop();
-    });
-    // config.data.datasets.forEach(function(dataset) {
-    //     dataset.data = dataset.data.map(function() {
-    //         return randomScalingFactor();
-    //     });
-    // });
-    config.data.datasets.data = [20000, 14000, 12000, 15000, 18000, 19000, 22000].slice(0);
+    config.data.datasets[0].data.length = 0;
+
+    let newData = [20000, 14000, 12000, 15000, 18000, 19000, 22000];
+
+    [].push.apply(config.data.datasets[0].data, newData);
+    //config.data.datasets.data = [20000, 14000, 12000, 15000, 18000, 19000, 22000].slice(0);
     window.myLine.update();
 });
